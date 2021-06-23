@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/shape_toast"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/textMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:shadowColor="@color/secondaryTextColor"
+        android:shadowDx="2.00"
+        android:shadowDy="5.00"
+        android:shadowRadius="5.00"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="18sp"
+        app:drawableLeftCompat="@drawable/ic_ok"
+        app:drawableStartCompat="@drawable/ic_ok" />
+</LinearLayout>

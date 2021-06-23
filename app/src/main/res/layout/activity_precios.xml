@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Precios">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/hielo"
+        android:textColor="#FBC02D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/precioHielo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/precioHielo" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/spartan"
+        android:textColor="#FBC02D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/costoSpartan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/costoSpartan" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/precioHielo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/precioHielo"
+        app:srcCompat="@drawable/hielo" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/costoSpartan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/costoSpartan"
+        app:srcCompat="@drawable/spartan" />
+
+    <EditText
+        android:id="@+id/precioHielo"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costoSpartan"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/costoSpartan"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costoZen"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/precioSpartan"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:shadowRadius="24"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precioZen"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/costoZen"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costoSav"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/costoSav"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costoGr"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/costoGr"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/costoPeq"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/costoPeq"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/precios"
+        android:textColor="#AFB42B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/pequeno"
+        android:textColor="#FBC02D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/costoPeq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/costoPeq" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/grande"
+        android:textColor="#FBC02D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/costoGr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/costoGr" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/saviloe"
+        android:textColor="#FBC02D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/costoSav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/costoSav" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/zen"
+        android:textColor="#FBC02D"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/costoZen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/costoZen" />
+
+    <EditText
+        android:id="@+id/precioPeq"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/precioGr"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precioPeq"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/precioSav"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precioGr"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/precioZen"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:shadowRadius="24"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precioSav"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnAtras"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="btnCancelar"
+        android:text="@string/btnCancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnGuardarPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="24dp"
+        android:onClick="btnGuardar"
+        android:text="@string/btnGuardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/precio_venta"
+        android:textColor="#FF3D00"
+        app:layout_constraintBottom_toTopOf="@+id/precioPeq"
+        app:layout_constraintEnd_toEndOf="@+id/precioPeq"
+        app:layout_constraintStart_toStartOf="@+id/precioPeq"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/precio_costo"
+        android:textColor="#FF3D00"
+        app:layout_constraintBottom_toTopOf="@+id/costoPeq"
+        app:layout_constraintEnd_toEndOf="@+id/costoPeq"
+        app:layout_constraintStart_toStartOf="@+id/costoPeq" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/precioPeq"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/precioPeq"
+        app:srcCompat="@drawable/vivep" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/costoPeq"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/costoPeq"
+        app:srcCompat="@drawable/vivep" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/precioGr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/precioGr"
+        app:srcCompat="@drawable/viveg" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/costoGr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/costoGr"
+        app:srcCompat="@drawable/viveg" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/precioSav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/precioSav"
+        app:srcCompat="@drawable/saviloe" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/costoSav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/costoSav"
+        app:srcCompat="@drawable/saviloe" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/precioZen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/precioZen"
+        app:srcCompat="@drawable/zen" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/costoZen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/costoZen"
+        app:srcCompat="@drawable/zen" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintBottom_toBottomOf="@+id/precioSpartan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/precioSpartan"
+        app:srcCompat="@drawable/spartan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

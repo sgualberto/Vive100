@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Editar_venta">
+
+    <TextView
+        android:id="@+id/totalHielo"
+        android:layout_width="80dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#FFFFFF"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="end"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:text="@string/cero"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toStartOf="@+id/btnCalcular"
+        app:layout_constraintTop_toTopOf="@+id/btnCalcular" />
+
+    <EditText
+        android:id="@+id/cantHielo"
+        android:layout_width="40dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGuardar"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardar"
+        app:layout_constraintTop_toTopOf="@+id/btnGuardar"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtIgual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/igual"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toBottomOf="@+id/cantSpartanD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantSpartanD"
+        app:layout_constraintTop_toTopOf="@+id/cantSpartanD" />
+
+    <TextView
+        android:id="@+id/txtMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/menos"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toBottomOf="@+id/cantSpartan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantSpartan"
+        app:layout_constraintTop_toTopOf="@+id/cantSpartan" />
+
+    <TextView
+        android:id="@+id/totalSpartan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/cero"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/cantSpartanD"
+        app:layout_constraintStart_toStartOf="@+id/cantSpartanD"
+        app:layout_constraintTop_toBottomOf="@+id/cantSpartanD" />
+
+    <TextView
+        android:id="@+id/cantTSpartan"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#FAF9F9"
+        android:gravity="center_horizontal"
+        android:text="@string/cero"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantSpartanD"
+        app:layout_constraintTop_toBottomOf="@+id/cantTZen" />
+
+
+    <TextView
+        android:id="@+id/txtSpartan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/spartan"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11" />
+
+    <EditText
+        android:id="@+id/txtVenta"
+        android:layout_width="120dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#FFFEFE"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:hint="@string/nombre_venta"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/cantVP"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="52dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:nextFocusDown="@id/cantVPD"
+        android:selectAllOnFocus="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/imgVP"
+        app:layout_constraintStart_toEndOf="@+id/imgVP"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/cantVPD"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:nextFocusDown="@id/cantVG"
+        android:selectAllOnFocus="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantVP"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/cantVG"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:nextFocusDown="@id/cantVGD"
+        android:selectAllOnFocus="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/imgVG"
+        app:layout_constraintStart_toEndOf="@+id/imgVG"
+        app:layout_constraintTop_toBottomOf="@+id/cantVP"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/cantVGD"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:nextFocusDown="@id/cantSaviloe"
+        android:selectAllOnFocus="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantVG"
+        app:layout_constraintTop_toBottomOf="@+id/cantVPD"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/cantSaviloe"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:nextFocusDown="@id/cantSaviloeD"
+        android:selectAllOnFocus="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/imgSav"
+        app:layout_constraintStart_toEndOf="@+id/imgSav"
+        app:layout_constraintTop_toBottomOf="@+id/cantVG"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/cantSaviloeD"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:nextFocusDown="@id/cantZen"
+        android:selectAllOnFocus="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cantSaviloe"
+        app:layout_constraintTop_toBottomOf="@+id/cantVGD"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/cantZen"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:nextFocusDown="@id/cantZenD"
+        android:selectAllOnFocus="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/imgZen"
+        app:layout_constraintStart_toEndOf="@+id/imgZen"
+        app:layout_constraintTop_toBottomOf="@id/cantSaviloe"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/cantSpartanD"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:nextFocusDown="@id/txtHielo"
+        android:selectAllOnFocus="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantSpartan"
+        app:layout_constraintTop_toBottomOf="@+id/cantZenD"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/cantSpartan"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:nextFocusDown="@id/cantSpartanD"
+        android:selectAllOnFocus="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/imgZen"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/cantZen"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/pequeno"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toTopOf="@+id/imgVP"
+        app:layout_constraintEnd_toEndOf="@+id/imgVP"
+        app:layout_constraintStart_toStartOf="@+id/imgVP" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/grande"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toTopOf="@+id/imgVG"
+        app:layout_constraintEnd_toEndOf="@+id/imgVG"
+        app:layout_constraintStart_toStartOf="@+id/imgVG" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/saviloe"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toTopOf="@+id/imgSav"
+        app:layout_constraintEnd_toEndOf="@+id/imgSav"
+        app:layout_constraintStart_toStartOf="@+id/imgSav" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/zen"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toTopOf="@+id/imgZen"
+        app:layout_constraintEnd_toEndOf="@+id/imgZen"
+        app:layout_constraintStart_toStartOf="@+id/imgZen" />
+
+    <TextView
+        android:id="@+id/totalVP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/cero"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/cantVPD"
+        app:layout_constraintStart_toStartOf="@+id/cantVPD"
+        app:layout_constraintTop_toBottomOf="@+id/cantVPD" />
+
+    <TextView
+        android:id="@+id/totalVG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/cero"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/cantVGD"
+        app:layout_constraintStart_toStartOf="@+id/cantVGD"
+        app:layout_constraintTop_toBottomOf="@+id/cantVGD" />
+
+    <TextView
+        android:id="@+id/totalSav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/cero"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/cantSaviloeD"
+        app:layout_constraintStart_toStartOf="@+id/cantSaviloeD"
+        app:layout_constraintTop_toBottomOf="@+id/cantSaviloeD" />
+
+    <TextView
+        android:id="@+id/totalZen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/cero"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/cantZenD"
+        app:layout_constraintStart_toStartOf="@+id/cantZenD"
+        app:layout_constraintTop_toBottomOf="@+id/cantZenD" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/menos"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toBottomOf="@+id/cantVP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantVP"
+        app:layout_constraintTop_toTopOf="@+id/cantVP" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/menos"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toBottomOf="@+id/cantVG"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantVG"
+        app:layout_constraintTop_toTopOf="@+id/cantVG"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/menos"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toBottomOf="@+id/cantSaviloe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantSaviloe"
+        app:layout_constraintTop_toTopOf="@+id/cantSaviloe" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/menos"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toBottomOf="@+id/cantZen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantZen"
+        app:layout_constraintTop_toTopOf="@+id/cantZen" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/igual"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toBottomOf="@+id/cantVPD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantVPD"
+        app:layout_constraintTop_toTopOf="@+id/cantVPD" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/igual"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toBottomOf="@+id/cantVGD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantVGD"
+        app:layout_constraintTop_toTopOf="@+id/cantVGD" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/igual"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toBottomOf="@+id/cantSaviloeD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantSaviloeD"
+        app:layout_constraintTop_toTopOf="@+id/cantSaviloeD" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/igual"
+        android:textColor="#AFB42B"
+        app:layout_constraintBottom_toBottomOf="@+id/cantZenD"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantZenD"
+        app:layout_constraintTop_toTopOf="@+id/cantZenD" />
+
+    <TextView
+        android:id="@+id/cantTVP"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#FAF9F9"
+        android:gravity="center_horizontal"
+        android:text="@string/cero"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantVPD"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cantTVG"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#FAF9F9"
+        android:gravity="center_horizontal"
+        android:text="@string/cero"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantVGD"
+        app:layout_constraintTop_toBottomOf="@+id/cantTVP" />
+
+    <TextView
+        android:id="@+id/cantTSav"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#FAF9F9"
+        android:gravity="center_horizontal"
+        android:text="@string/cero"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantSaviloeD"
+        app:layout_constraintTop_toBottomOf="@+id/cantTVG" />
+
+    <TextView
+        android:id="@+id/cantTZen"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#FAF9F9"
+        android:gravity="center_horizontal"
+        android:text="@string/cero"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cantZenD"
+        app:layout_constraintTop_toBottomOf="@+id/cantTSav" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/entregadas"
+        android:textColor="#FFA000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/cantVP"
+        app:layout_constraintEnd_toEndOf="@+id/cantVP"
+        app:layout_constraintStart_toStartOf="@+id/cantVP" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/devueltas"
+        android:textColor="#FFA000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/cantVPD"
+        app:layout_constraintEnd_toEndOf="@+id/cantVPD"
+        app:layout_constraintStart_toStartOf="@+id/cantVPD" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/vendidas"
+        android:textColor="#FFA000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/cantTVP"
+        app:layout_constraintEnd_toEndOf="@+id/cantTVP"
+        app:layout_constraintStart_toStartOf="@+id/cantTVP" />
+
+
+    <EditText
+        android:id="@+id/cantZenD"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="3"
+        android:nextFocusDown="@id/cantSpartan"
+        android:selectAllOnFocus="true"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cantZen"
+        app:layout_constraintTop_toBottomOf="@+id/cantSaviloeD"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btnguardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="BtnCalcular"
+        android:text="@string/btnAceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgVP"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vivep" />
+
+    <ImageView
+        android:id="@+id/imgVG"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgVP"
+        app:srcCompat="@drawable/viveg" />
+
+    <ImageView
+        android:id="@+id/imgSav"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgVG"
+        app:srcCompat="@drawable/saviloe" />
+
+    <ImageView
+        android:id="@+id/imgZen"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSav"
+        app:srcCompat="@drawable/zen" />
+
+    <TextView
+        android:id="@+id/txtHielo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="@string/hielo"
+        android:textColor="#FBC02D"
+        app:layout_constraintBottom_toTopOf="@+id/cantHielo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/venta"
+        android:textColor="#D32F2F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/descripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgZen"
+        app:srcCompat="@drawable/spartan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
